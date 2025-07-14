@@ -5,12 +5,14 @@ import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-nltk.download('punkt')
+nltk.download('punkt')  # correct resource
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 
 # Page config
 st.set_page_config(page_title="Spam Classifier", page_icon="📨", layout="centered")
 
-# ✅ Custom Dark Theme CSS (NO NEON COLORS)
+
 st.markdown("""
     <style>
     /* Main background and text */
